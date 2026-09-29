@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-PASSE 1 — Audit & normalisation du rapport de stage MOOMOO.
+PASSES 1–4 — Normalisation + rédaction du rapport de stage MOOMOO.
 
-Idempotent : repart toujours de SRC et réécrit OUT.
+Idempotent : repart toujours de SRC et réécrit OUT, puis applique passes 2–4.
 Usage : python3 scripts/build_report.py
 """
 from __future__ import annotations
@@ -1037,8 +1037,22 @@ def build() -> dict:
     doc.save(str(OUT))
 
     write_side_docs(stats)
-    print(f"[ok] {OUT}")
-    print("stats:", stats)
+    print(f"[ok] {OUT} (passe 1)")
+    print("stats_passe1:", stats)
+
+    # PASSES 2–4 : contenu, biblio, placeholders diagrammes, side docs
+    import sys
+    from pathlib import Path as _Path
+
+    _scripts = str(_Path(__file__).resolve().parent)
+    if _scripts not in sys.path:
+        sys.path.insert(0, _scripts)
+    from pass_content import apply_passes
+
+    stats2 = apply_passes(OUT)
+    stats["passes_2_4"] = stats2
+    print(f"[ok] {OUT} (passes 2–4)")
+    print("stats_passes_2_4:", stats2)
     return stats
 
 

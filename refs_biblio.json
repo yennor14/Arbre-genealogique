@@ -1,0 +1,86 @@
+[
+  {
+    "id": "who2024",
+    "apa": "World Health Organization. (2024). Deafness and hearing loss [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+    "type": "report",
+    "year": 2024,
+    "verified": true
+  },
+  {
+    "id": "who2021wrh",
+    "apa": "World Health Organization. (2021). World report on hearing. WHO. https://www.who.int/publications/i/item/9789240020481",
+    "type": "report",
+    "year": 2021,
+    "verified": true
+  },
+  {
+    "id": "omguml25",
+    "apa": "Object Management Group. (2017). OMG Unified Modeling Language (OMG UML), Version 2.5.1. https://www.omg.org/spec/UML/2.5.1/",
+    "type": "standard",
+    "year": 2017,
+    "verified": true
+  },
+  {
+    "id": "booch2005",
+    "apa": "Booch, G., Rumbaugh, J., & Jacobson, I. (2005). The Unified Modeling Language user guide (2nd ed.). Addison-Wesley.",
+    "type": "book",
+    "year": 2005,
+    "verified": true
+  },
+  {
+    "id": "larman2005",
+    "apa": "Larman, C. (2005). Applying UML and patterns: An introduction to object-oriented analysis and design and iterative development (3rd ed.). Prentice Hall.",
+    "type": "book",
+    "year": 2005,
+    "verified": true
+  },
+  {
+    "id": "pressman2014",
+    "apa": "Pressman, R. S., & Maxim, B. R. (2014). Software engineering: A practitioner's approach (8th ed.). McGraw-Hill Education.",
+    "type": "book",
+    "year": 2014,
+    "verified": true
+  },
+  {
+    "id": "sommerville2016",
+    "apa": "Sommerville, I. (2016). Software engineering (10th ed.). Pearson.",
+    "type": "book",
+    "year": 2016,
+    "verified": true
+  },
+  {
+    "id": "tardieu2000",
+    "apa": "Tardieu, H., Rochfeld, A., & Colletti, R. (2000). La méthode MERISE : Principes et outils (rééd.). Éditions d'Organisation.",
+    "type": "book",
+    "year": 2000,
+    "verified": true
+  },
+  {
+    "id": "kruchten2004",
+    "apa": "Kruchten, P. (2004). The Rational Unified Process: An introduction (3rd ed.). Addison-Wesley.",
+    "type": "book",
+    "year": 2004,
+    "verified": true
+  },
+  {
+    "id": "li2025kdmslrt",
+    "apa": "Li, Y., Ren, B., Hu, K., Liu, C., Jiang, Z., Dang, K., & Su, J. (2025). KD-MSLRT: Lightweight sign language recognition model based on MediaPipe and 3D to 1D knowledge distillation. Proceedings of the AAAI Conference on Artificial Intelligence, 39(27), 28177–28185.",
+    "type": "article",
+    "year": 2025,
+    "verified": true
+  },
+  {
+    "id": "apa7",
+    "apa": "American Psychological Association. (2020). Publication manual of the American Psychological Association (7th ed.). APA.",
+    "type": "book",
+    "year": 2020,
+    "verified": true
+  },
+  {
+    "id": "iai2025cdc",
+    "apa": "Institut Africain d'Informatique — Représentation du Cameroun. (2025). Cahier des charges — Stage pratique (3e année, 2025-2026). IAI-Cameroun.",
+    "type": "institutional",
+    "year": 2025,
+    "verified": true
+  }
+]

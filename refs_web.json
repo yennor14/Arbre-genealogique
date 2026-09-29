@@ -1,0 +1,133 @@
+[
+  {
+    "id": "who-hearing-fs",
+    "title": "Deafness and hearing loss — WHO fact sheet",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Statistiques mondiales déficience auditive"
+  },
+  {
+    "id": "who-hearing-topic",
+    "title": "Hearing loss — WHO health topic",
+    "url": "https://www.who.int/health-topics/hearing-loss/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Contexte santé publique"
+  },
+  {
+    "id": "mediapipe-hand",
+    "title": "Hand landmarks detection guide (MediaPipe / Google AI Edge)",
+    "url": "https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/python",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "État de l'art détection landmarks mains"
+  },
+  {
+    "id": "omg-uml",
+    "title": "OMG UML 2.5.1 specification",
+    "url": "https://www.omg.org/spec/UML/2.5.1/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Référence UML"
+  },
+  {
+    "id": "zoom-lenovo-ideapad3",
+    "title": "Laptop Lenovo IdeaPad 3 — Zoom Informatique (Cameroun)",
+    "url": "https://zoominformatics.com/produit/pc-portable-lenovo-ideapad-3/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "price_fcfa": 210000,
+    "use": "Prix matériel PC entrée de gamme"
+  },
+  {
+    "id": "zoom-hp240",
+    "title": "Laptop HP 240 G10 i3 — Zoom Informatique (Cameroun)",
+    "url": "https://zoominformatics.com/produit/laptop-hp-240-g10-intel-core-i3-1315u/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "price_fcfa": 250000,
+    "use": "Prix matériel PC développement"
+  },
+  {
+    "id": "zoom-hp250",
+    "title": "Laptop HP 250 G10 i3 — Zoom Informatique (Cameroun)",
+    "url": "https://zoominformatics.com/produit/laptop-hp-250-g10-core-i3-12e-gen/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "price_fcfa": 280000,
+    "use": "Prix matériel PC alternatif"
+  },
+  {
+    "id": "mercuriale-2026",
+    "title": "Mercuriale des prix 2026 Cameroun (référentiel BOND / MINCOMMERCE)",
+    "url": "https://lefisk.cm/outils/mercuriale",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Référentiel officiel prix marchés publics 2026"
+  },
+  {
+    "id": "econuma-salaires-2026",
+    "title": "Cinq métiers numériques qui recrutent au Cameroun en 2026 — ECONUMA",
+    "url": "https://www.econuma.com/go-digital/cinq-familles-metiers-numeriques-cameroun-2026-1788282595",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Fourchettes salaires développeur junior FCFA 2026"
+  },
+  {
+    "id": "sangoservices-salaires",
+    "title": "Grille de salaires au Cameroun 2026 (secteur tech)",
+    "url": "https://sangoservices.com/fr/blog/salaires-cameroun-par-secteur",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Salaires développeur web junior 150000–300000 FCFA/mois"
+  },
+  {
+    "id": "mdpi-nsl-2025",
+    "title": "Real-Time Norwegian Sign Language Recognition Using MediaPipe and LSTM",
+    "url": "https://www.mdpi.com/2414-4088/9/3/23",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "État de l'art SLR MediaPipe+LSTM"
+  },
+  {
+    "id": "iai-cameroun",
+    "title": "IAI Cameroun — site institutionnel",
+    "url": "https://www.iaicameroun.com",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Institution de formation"
+  },
+  {
+    "id": "python-org",
+    "title": "Python.org — langage Python",
+    "url": "https://www.python.org/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Technologie open source (hypothèse stack)"
+  },
+  {
+    "id": "postgresql-org",
+    "title": "PostgreSQL — documentation officielle",
+    "url": "https://www.postgresql.org/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "SGBD (hypothèse — À VÉRIFIER pour MOOMOO)"
+  },
+  {
+    "id": "fastapi-docs",
+    "title": "FastAPI documentation",
+    "url": "https://fastapi.tiangolo.com/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "Framework API (hypothèse — À VÉRIFIER pour MOOMOO)"
+  },
+  {
+    "id": "react-docs",
+    "title": "React — documentation officielle",
+    "url": "https://react.dev/",
+    "accessed": "2026-09-29",
+    "verified": true,
+    "use": "UI (hypothèse — À VÉRIFIER pour MOOMOO)"
+  }
+]

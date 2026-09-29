@@ -1,0 +1,405 @@
+{
+  "content": {
+    "RESUME": [
+      "Le présent rapport de stage pratique (année académique 2025-2026) porte sur la conception et la réalisation d'une application de traduction du langage des signes en texte ou audio et vice versa, dénommée MOOMOO. Le stage s'inscrit dans le cadre de la formation de 3e année du cycle des Ingénieurs de Travaux en Informatique, option Génie Logiciel, à l'Institut Africain d'Informatique — Représentation du Cameroun (Institut Africain d'Informatique — Représentation du Cameroun, 2025).",
+      "Selon l'Organisation mondiale de la Santé, plus de 1,5 milliard de personnes vivent avec une forme de perte auditive et environ 430 millions présentent une perte auditive invalidante (World Health Organization, 2024). Dans ce contexte, les technologies d'assistance à la communication entre personnes sourdes ou malentendantes et personnes entendantes constituent un enjeu d'inclusion numérique majeur, notamment dans les pays à revenu faible ou intermédiaire où près de 80 % des personnes concernées résident (World Health Organization, 2024).",
+      "La démarche adoptée suit le plan imposé pour les thèmes de développement (UML) : étude de l'existant, cahier des charges, dossier d'analyse, dossier de conception, dossier de réalisation, tests de fonctionnalités, puis guides d'installation et d'utilisation (Institut Africain d'Informatique — Représentation du Cameroun, 2025). Les éléments propres à l'entreprise d'accueil, à la langue des signes ciblée, à la plateforme et à la stack technique effective de MOOMOO restent signalés par [À COMPLÉTER] lorsque l'information n'a pas été fournie par le stagiaire.",
+      "Mots-clés : langage des signes ; traduction multimodale ; accessibilité ; UML ; MOOMOO ; Génie Logiciel ; stage pratique IAI."
+    ],
+    "ABSTRACT": [
+      "This internship report (academic year 2025-2026) addresses the design and implementation of MOOMOO, an application for bidirectional translation between sign language and text or audio. The work is carried out within the third-year Software Engineering curriculum of the African Institute of Computer Science — Cameroon Representation (Institut Africain d'Informatique — Représentation du Cameroun, 2025).",
+      "According to the World Health Organization, more than 1.5 billion people live with some degree of hearing loss and about 430 million have disabling hearing loss (World Health Organization, 2024). Assistive communication technologies are therefore critical for digital inclusion, especially in low- and middle-income countries (World Health Organization, 2024).",
+      "The report follows the mandatory development-theme structure (UML): existing-system study, requirements specification, analysis, design, implementation, functional testing, and installation/user guides (Institut Africain d'Informatique — Représentation du Cameroun, 2025). Company-specific facts, the targeted sign language, platform and confirmed technology stack remain marked as [À COMPLÉTER] when not provided by the intern.",
+      "Keywords: sign language; multimodal translation; accessibility; UML; MOOMOO; Software Engineering; IAI internship."
+    ],
+    "INTRODUCTION GÉNÉRALE": [
+      "L'inclusion numérique des personnes sourdes et malentendantes constitue aujourd'hui un défi sociétal et technique. L'OMS estime qu'environ 430 millions de personnes ont besoin d'une réadaptation pour une perte auditive invalidante (World Health Organization, 2024). Le langage des signes, modalité visuelle-gestuelle à part entière, demeure peu accessible aux non-signants, ce qui freine l'accès à l'éducation, aux services et à l'emploi.",
+      "Dans ce cadre, le projet MOOMOO vise la conception et la réalisation d'une application permettant la traduction du langage des signes en texte ou en audio, et réciproquement. Le titre officiel retenu est : « CONCEPTION ET RÉALISATION D'UNE APPLICATION DE TRADUCTION DU LANGAGE DES SIGNES EN TEXTE OU AUDIO ET VICE VERSA : CAS DE MOOMOO ». La nature exacte de l'entité MOOMOO (startup, produit interne, projet académique encadré), la langue des signes cible et la plateforme (mobile et/ou web) sont [À COMPLÉTER].",
+      "Le présent rapport, rédigé par OTILA Nicandre (GL3, 2025-2026), s'organise conformément au cahier des charges du stage pratique IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025) : une Partie I consacrée à la phase d'insertion, puis une Partie II technique structurée en sept dossiers (existant, cahier des charges, analyse, conception, réalisation, tests, guides). Une conclusion générale, des perspectives, une bibliographie, une webographie, un glossaire et des annexes (dont crédits d'images) complètent le document.",
+      "Épigraphe — « Alone we can do so little; together we can do so much. » — Helen Keller (citation attestée dans ses écrits et discours publics sur la coopération et l'accessibilité)."
+    ],
+    "PARTIE 2 : PHASE TECHNIQUE|Introduction": [
+      "La phase technique constitue le cœur du stage. Elle décrit, pour le projet MOOMOO, l'étude de l'existant, l'expression des besoins, l'analyse UML, la conception, la réalisation, les tests et les guides d'exploitation, conformément au plan des thèmes de développement (Institut Africain d'Informatique — Représentation du Cameroun, 2025).",
+      "Sauf mention contraire, les faits spécifiques à l'entreprise d'accueil, au dataset et à la stack réellement déployée sont laissés en [À COMPLÉTER] afin de ne pas inventer d'informations non fournies. Les éléments théoriques (UML, processus unifiés) s'appuient sur des références standard (Object Management Group, 2017 ; Booch et al., 2005)."
+    ],
+    "DOSSIER 1 : L'EXISTANT|Introduction": [
+      "Ce dossier pose le cadre du thème et dresse un état des lieux des pratiques et outils existants en matière de traduction assistée du langage des signes. Il aboutit à une problématique et à une proposition de solution pour MOOMOO, sans anticiper les détails de conception traités aux dossiers suivants (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 1 : L'EXISTANT|PRESENTATION DU PROJET": [
+      "MOOMOO désigne l'application objet du stage : une solution de traduction bidirectionnelle entre langage des signes et modalités texte/audio. Le stagiaire OTILA Nicandre intervient dans le cadre du stage pratique GL3 2025-2026. Le superviseur académique IAI, le maître de stage, la période exacte et le statut juridique de MOOMOO sont [À COMPLÉTER].",
+      "Sur le plan fonctionnel attendu (hypothèse de cadrage issue du titre, à valider avec le maître de stage), le système doit : (1) capturer ou importer une séquence de signes ; (2) produire une restitution textuelle et/ou audio ; (3) permettre l'entrée texte/audio et une restitution en signes (avatar, vidéo ou glossaire animé — modalité [À COMPLÉTER]) ; (4) garantir une expérience utilisable hors laboratoire.",
+      "Source de cadrage institutionnel : (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 1 : L'EXISTANT|ETUDE DE L'EXISTANT": [
+      "L'existant se décline en trois couches. (a) Pratiques humaines : interprètes en langue des signes, médiation scolaire et associative — efficaces mais coûteuses et non disponibles en continu. (b) Aides techniques générales : sous-titrage, transcription automatique de la parole, appareils auditifs — utiles mais ne couvrent pas la traduction signe ↔ texte/audio. (c) Systèmes de Sign Language Recognition (SLR) : pipelines vision par ordinateur combinant extraction de landmarks (ex. MediaPipe Hand Landmarker) et modèles de séquence (Google AI Edge / MediaPipe Hand Landmarker, consulté le 29/09/2026) ; des travaux récents proposent des modèles légers pour le déploiement (Li et al., 2025).",
+      "Des études de 2025 confirment la pertinence du couple MediaPipe + réseaux récurrents (LSTM) pour la reconnaissance temps réel de langues des signes nationales (MDPI Machines, 2025 — reconnaissance LSF/NSL MediaPipe+LSTM). Toutefois, la couverture lexicale, la gestion des signes continus et l'adaptation aux langues africaines (dont le choix pour MOOMOO reste [À COMPLÉTER]) demeurent des verrous.",
+      "Au Cameroun et en Afrique centrale, l'offre logicielle locale dédiée, documentée et open source largement déployée, reste limitée d'après l'état de la littérature consultée ; toute solution propriétaire locale non vérifiable ici est signalée [À VÉRIFIER]."
+    ],
+    "DOSSIER 1 : L'EXISTANT|CRITIQUE DE L'EXISTANT": [
+      "Les limites observées motivent le tableau critique ci-dessous. Les solutions SLR générales sont souvent entraînées sur ASL/CSL/DSGS et se transfèrent mal sans dataset local. Les applications grand public peuvent exiger une connectivité permanente ou des capteurs coûteux. Les approches purement textuelles ignorent la multimodalité gestuelle.",
+      "Source méthodologique de la critique : synthèse à partir de (World Health Organization, 2024), (Google AI Edge / MediaPipe Hand Landmarker, consulté le 29/09/2026), (Li et al., 2025)."
+    ],
+    "DOSSIER 1 : L'EXISTANT|PROBLEMATIQUE": [
+      "Comment concevoir et réaliser une application (MOOMOO) capable de traduire de manière bidirectionnelle le langage des signes en texte ou audio, dans un contexte d'usage réaliste ([À COMPLÉTER : mobile/web]), avec des ressources matérielles accessibles et un modèle adapté à la langue des signes cible ([À COMPLÉTER]), tout en respectant les exigences de qualité logicielle du cahier des charges IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025) ?"
+    ],
+    "DOSSIER 1 : L'EXISTANT|PROPOSITION DE SOLUTION": [
+      "La solution proposée consiste à développer MOOMOO comme application de traduction multimodale s'appuyant sur : une capture vidéo/caméra ; un module d'extraction de caractéristiques gestuelles (approche de type landmarks, inspirée de MediaPipe (Google AI Edge / MediaPipe Hand Landmarker, consulté le 29/09/2026)) ; un module de reconnaissance/traduction vers texte ; une synthèse vocale pour la sortie audio ; et, dans le sens inverse, une restitution visuelle des signes ([À COMPLÉTER : avatar / clips / illustration]).",
+      "La stack technique effectivement retenue pour MOOMOO est [À COMPLÉTER / À VÉRIFIER]. Les mentions React, FastAPI, PostgreSQL ou Gemini présentes dans le gabarit d'origine sont traitées comme hypothèses héritées et non comme faits établis pour ce projet.",
+      "Le découpage en dossiers d'analyse UML, conception, réalisation et tests permettra de tracer les exigences jusqu'aux livrables exécutables (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 1 : L'EXISTANT|Conclusion": [
+      "L'étude de l'existant montre un besoin réel d'outils d'assistance à la communication en langue des signes (World Health Organization, 2024), un dynamisme de la recherche SLR (Li et al., 2025), et un déficit de solutions locales documentées pour le contexte de MOOMOO. La suite du rapport formalise les besoins (Dossier 2) puis la modélisation UML."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|Introduction": [
+      "Le cahier des charges contractualise les attentes entre maîtrise d'ouvrage et maîtrise d'œuvre. Il précise contexte, objectifs, besoins fonctionnels et non fonctionnels, planification, estimation financière, contraintes et livrables (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|CONTEXTE ET JUSTIFICATION DU PROJET|Contexte": [
+      "Le projet s'inscrit dans le stage pratique 2025-2026 (GL3). L'OMS rappelle que la perte auditive non prise en charge a un coût sociétal considérable et que la majorité des personnes concernées vivent dans des pays à revenu faible ou intermédiaire (World Health Organization, 2024). MOOMOO vise à réduire la barrière de communication signe ↔ texte/audio dans ce contexte.",
+      "Contexte organisationnel (entreprise, équipe, clients) : [À COMPLÉTER]."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|CONTEXTE ET JUSTIFICATION DU PROJET|Justification": [
+      "La justification repose sur : (1) l'ampleur du besoin de santé publique et d'inclusion (World Health Organization, 2024) ; (2) la maturité croissante des briques open source de vision (MediaPipe) (Google AI Edge / MediaPipe Hand Landmarker, consulté le 29/09/2026) ; (3) l'opportunité pédagogique de mobiliser le cycle d'ingénierie logicielle UML exigé par l'IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|BENEFICIAIRE ET CIBLE|Bénéficiaire": [
+      "Bénéficiaire principal : l'entité MOOMOO / structure d'accueil [À COMPLÉTER], qui obtient un prototype ou une application selon l'avancement [À COMPLÉTER]. Bénéficiaire pédagogique : le stagiaire OTILA Nicandre, évalué sur la qualité du livrable et du rapport (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|BENEFICIAIRE ET CIBLE|Cible": [
+      "Utilisateurs cibles (hypothèse de cadrage) : personnes sourdes ou malentendantes pratiquant la langue des signes cible ([À COMPLÉTER]) ; proches, enseignants, agents d'accueil et grand public non signant souhaitant communiquer. La segmentation fine (âge, alphabétisation, type d'appareil) est [À COMPLÉTER]."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|LES OBJECTIFS DU PROJET|Objectif général": [
+      "Concevoir et réaliser une application MOOMOO permettant la traduction du langage des signes en texte ou audio et réciproquement, selon les exigences validées avec le maître de stage, dans le respect du cahier des charges IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|LES OBJECTIFS DU PROJET|Objectifs spécifiques": [
+      "Les objectifs spécifiques retenus sont :"
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|EXPRESSIONS DES BESOINS DE L'UTILISATEUR|Besoins fonctionnels": [
+      "Besoins fonctionnels (à valider — hypothèses alignées sur le titre du projet) :"
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|EXPRESSIONS DES BESOINS DE L'UTILISATEUR|Besoins non fonctionnels": [
+      "Besoins non fonctionnels :"
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|PLANIFICATION DU PROJET|Intervenants": [
+      "Intervenants prévus : stagiaire (OTILA Nicandre) ; maître de stage [À COMPLÉTER] ; superviseur académique IAI [À COMPLÉTER] ; éventuels contributeurs dataset/annotateurs [À COMPLÉTER]. Rôles : maîtrise d'œuvre technique (stagiaire), validation métier (maître de stage), validation pédagogique (superviseur) (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|PLANIFICATION DU PROJET|Diagramme de Gantt": [
+      "Le planning de référence du stage pratique IAI distingue une phase d'insertion/imprégnation (environ 2 semaines) et une phase technique (environ 10 semaines) (Institut Africain d'Informatique — Représentation du Cameroun, 2025). Le diagramme de Gantt détaillé du projet MOOMOO est fourni ci-dessous sous forme de placeholder graphique.",
+      "[ INSÉRER DIAGRAMME ICI : Diagramme de Gantt MOOMOO ]",
+      "Source : planification type IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025) ; jalons précis [À COMPLÉTER]."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|ESTIMATION DU COUT DU PROJET|Les contraintes du projet": [
+      "Contraintes identifiées : délai du stage (fenêtre académique 2025-2026) (Institut Africain d'Informatique — Représentation du Cameroun, 2025) ; budget limité aux ressources du stagiaire/structure [À COMPLÉTER] ; disponibilité d'un dataset annoté [À COMPLÉTER] ; contraintes éthiques (consentement des signants, images de personnes) ; contraintes techniques (performances appareil, connectivité)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|ESTIMATION DU COUT DU PROJET|Les livrables": [
+      "Livrables : rapport de stage structuré ; application MOOMOO (binaire/code selon avancement [À COMPLÉTER]) ; dossier d'analyse/conception UML ; jeux de tests ; guides d'installation et d'utilisation ; supports de soutenance. Support numérique à déposer avant soutenance selon les consignes IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|Conclusion": [
+      "Le cahier des charges formalise le besoin d'une traduction signe ↔ texte/audio pour MOOMOO, les objectifs, les exigences et une estimation de coûts en FCFA sourcée (mercuriale / prix marché 2026). Les données manquantes restent explicitement marquées [À COMPLÉTER]."
+    ],
+    "DOSSIER 3 : DOSSIER D'ANALYSE|Introduction": [
+      "Le dossier d'analyse affine le choix méthodologique (UML vs MERISE, processus unifiés) puis modélise la solution MOOMOO via les diagrammes de cas d'utilisation, de communication, de séquence et d'activité (Institut Africain d'Informatique — Représentation du Cameroun, 2025) ; (Object Management Group, 2017 ; Booch et al., 2005).",
+      "Les sections théoriques comparatives du gabarit sont conservées et corrigées ; les cas d'utilisation métier issus de l'ancien projet mentorat sont remplacés par des placeholders ou des cas génériques MOOMOO explicitement signalés."
+    ],
+    "DOSSIER 3 : DOSSIER D'ANALYSE|Conclusion": [
+      "L'analyse retient une démarche UML adaptée aux systèmes interactifs multimodaux (Object Management Group, 2017 ; Booch et al., 2005). Les diagrammes produits pour MOOMOO doivent être finalisés graphiquement (placeholders uniformes) et validés avec le maître de stage. La conception détaillée suit au Dossier 4."
+    ],
+    "DOSSIER 3 : DOSSIER D'ANALYSE|MODÉLISATION DE LA SOLUTION|DIAGRAMME DE CAS D'UTILISATION|LISTE ET ROLES DES DIFFERENTS ACTEURS DU SYSTEME": [
+      "Acteurs candidats pour MOOMOO (hypothèse — à valider) :"
+    ],
+    "DOSSIER 4 : DOSSIER DE CONCEPTION|Introduction": [
+      "Le dossier de conception traduit l'analyse en structure logicielle : diagramme de classes, diagrammes d'états-transitions et diagramme de paquetages (Institut Africain d'Informatique — Représentation du Cameroun, 2025) ; (Object Management Group, 2017 ; Booch et al., 2005).",
+      "Les associations héritées du domaine mentorat ont été neutralisées en PASSE 1 ; les classes du domaine MOOMOO (Utilisateur, SessionTraduction, Signe, Glossaire, ModèleIA, etc.) sont proposées ci-après comme hypothèses de conception à valider."
+    ],
+    "DOSSIER 4 : DOSSIER DE CONCEPTION|Conclusion": [
+      "La conception pose une architecture objet du domaine de traduction multimodale. Les diagrammes graphiques restent à insérer (placeholders). La réalisation (Dossier 5) précise technologies et déploiement."
+    ],
+    "DOSSIER 5 : DOSSIER DE RÉALISATION|Introduction": [
+      "Ce dossier présente les technologies, architectures et diagrammes de déploiement/composants mobilisés pour réaliser MOOMOO (Institut Africain d'Informatique — Représentation du Cameroun, 2025). Toute stack citée issue du gabarit et non confirmée est marquée [À VÉRIFIER]."
+    ],
+    "DOSSIER 5 : DOSSIER DE RÉALISATION|Conclusion": [
+      "La réalisation articule interfaces, services de reconnaissance/synthèse et persistance. Le détail du dépôt de code, des versions et de l'environnement de production est [À COMPLÉTER]. Les tests font l'objet du Dossier 6."
+    ],
+    "DOSSIER 6 : TEST DE FONCTIONNALITE|Introduction": [
+      "Les tests de fonctionnalités vérifient que MOOMOO répond aux besoins exprimés. On distingue tests unitaires, d'intégration et de recette utilisateur (Sommerville, 2016 ; Pressman & Maxim, 2014)."
+    ],
+    "DOSSIER 6 : TEST DE FONCTIONNALITE|FONCTIONNALITES": [
+      "Fonctionnalités essentielles à tester (hypothèses alignées sur le titre) :"
+    ],
+    "DOSSIER 6 : TEST DE FONCTIONNALITE|TESTS": [
+      "Stratégie de tests : jeux de gestes de référence ([À COMPLÉTER : dataset]) ; mesures de précision/rappel sur classes de signes ; tests de latence sur appareil cible ; tests d'utilisabilité auprès d'un panel [À COMPLÉTER] ; non-régression après correctifs. Les captures d'écran de recette sont à insérer en annexes.",
+      "[ INSÉRER DIAGRAMME ICI : Matrice de couverture des tests MOOMOO ]",
+      "Source méthodologique : (Sommerville, 2016)."
+    ],
+    "DOSSIER 6 : TEST DE FONCTIONNALITE|Conclusion": [
+      "Les tests valident — ou invalident — le niveau de service de MOOMOO. Les résultats chiffrés définitifs sont [À COMPLÉTER] selon l'avancement réel du prototype."
+    ],
+    "DOSSIER 7 : GUIDE D'INSTALLATION ET GUIDE D'UTILISATEUR|Introduction": [
+      "Ce dossier fournit les instructions d'installation et d'utilisation de MOOMOO, destinées à un utilisateur non développeur autant qu'à un exploitant technique (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 7 : GUIDE D'INSTALLATION ET GUIDE D'UTILISATEUR|GUIDE D'INSTALLATION": [
+      "Prérequis matériels indicatifs : appareil avec caméra ; [À COMPLÉTER : OS et versions] ; mémoire et stockage minimaux [À COMPLÉTER]. Prérequis logiciels : runtime de la stack retenue [À VÉRIFIER] ; éventuels modèles ML téléchargeables.",
+      "Procédure type (à adapter) : (1) récupérer le paquet/code depuis [À COMPLÉTER] ; (2) installer les dépendances ; (3) configurer les variables d'environnement ; (4) lancer le service/application ; (5) vérifier l'accès caméra/micro. Captures :",
+      "[ INSÉRER DIAGRAMME ICI : Capture écran installation MOOMOO — étape 1 ]",
+      "[ INSÉRER DIAGRAMME ICI : Capture écran installation MOOMOO — étape 2 ]"
+    ],
+    "DOSSIER 7 : GUIDE D'INSTALLATION ET GUIDE D'UTILISATEUR|GUIDE UTILISATEUR": [
+      "Parcours utilisateur type : ouvrir MOOMOO → choisir le sens de traduction (signes→texte/audio ou texte/audio→signes) → autoriser caméra/micro → réaliser le geste ou saisir le texte → consulter le résultat → éventuellement corriger/enregistrer. Les écrans finaux sont [À COMPLÉTER].",
+      "[ INSÉRER DIAGRAMME ICI : Capture écran accueil MOOMOO ]",
+      "[ INSÉRER DIAGRAMME ICI : Capture écran traduction signes vers texte ]",
+      "[ INSÉRER DIAGRAMME ICI : Capture écran traduction texte vers signes ]"
+    ],
+    "DOSSIER 7 : GUIDE D'INSTALLATION ET GUIDE D'UTILISATEUR|Conclusion": [
+      "Les guides rendent MOOMOO exploitable hors de l'équipe de développement. Ils devront être mis à jour dès que la plateforme et la stack définitives seront confirmées ([À COMPLÉTER])."
+    ],
+    "CONCLUSION GENERALE": [
+      "Le stage a permis d'appliquer le cycle d'ingénierie logicielle exigé par l'IAI à un problème d'inclusion : la traduction bidirectionnelle entre langage des signes et texte/audio via MOOMOO (Institut Africain d'Informatique — Représentation du Cameroun, 2025). L'ancrage du besoin dans les données OMS (World Health Organization, 2024) et dans l'état de l'art SLR (Li et al., 2025) légitime le thème.",
+      "Les limites du présent livrable tiennent principalement aux informations non fournies (entreprise, période, langue des signes, stack, dataset, résultats de tests), volontairement laissées en [À COMPLÉTER] plutôt qu'inventées. La qualité finale dépendra de la complétion de ces éléments et de l'insertion des diagrammes/captures."
+    ],
+    "PERSPECTIVES": [
+      "Perspectives techniques : enrichir le vocabulaire de signes ; améliorer la reconnaissance continue ; optimiser le déploiement embarqué ; évaluer hors ligne. Perspectives sociales : partenariats avec associations de sourds ; protocoles éthiques de collecte ; localisation linguistique camerounaise/régionale ([À COMPLÉTER]). Perspectives académiques : publication éventuelle des résultats et ouverture d'un dataset documenté, sous réserve d'accords."
+    ],
+    "RÉSUMÉ": [
+      "Le présent rapport de stage pratique (année académique 2025-2026) porte sur la conception et la réalisation d'une application de traduction du langage des signes en texte ou audio et vice versa, dénommée MOOMOO. Le stage s'inscrit dans le cadre de la formation de 3e année du cycle des Ingénieurs de Travaux en Informatique, option Génie Logiciel, à l'Institut Africain d'Informatique — Représentation du Cameroun (Institut Africain d'Informatique — Représentation du Cameroun, 2025).",
+      "Selon l'Organisation mondiale de la Santé, plus de 1,5 milliard de personnes vivent avec une forme de perte auditive et environ 430 millions présentent une perte auditive invalidante (World Health Organization, 2024). Dans ce contexte, les technologies d'assistance à la communication entre personnes sourdes ou malentendantes et personnes entendantes constituent un enjeu d'inclusion numérique majeur, notamment dans les pays à revenu faible ou intermédiaire où près de 80 % des personnes concernées résident (World Health Organization, 2024).",
+      "La démarche adoptée suit le plan imposé pour les thèmes de développement (UML) : étude de l'existant, cahier des charges, dossier d'analyse, dossier de conception, dossier de réalisation, tests de fonctionnalités, puis guides d'installation et d'utilisation (Institut Africain d'Informatique — Représentation du Cameroun, 2025). Les éléments propres à l'entreprise d'accueil, à la langue des signes ciblée, à la plateforme et à la stack technique effective de MOOMOO restent signalés par [À COMPLÉTER] lorsque l'information n'a pas été fournie par le stagiaire.",
+      "Mots-clés : langage des signes ; traduction multimodale ; accessibilité ; UML ; MOOMOO ; Génie Logiciel ; stage pratique IAI."
+    ],
+    "INTRODUCTION GENERALE": [
+      "L'inclusion numérique des personnes sourdes et malentendantes constitue aujourd'hui un défi sociétal et technique. L'OMS estime qu'environ 430 millions de personnes ont besoin d'une réadaptation pour une perte auditive invalidante (World Health Organization, 2024). Le langage des signes, modalité visuelle-gestuelle à part entière, demeure peu accessible aux non-signants, ce qui freine l'accès à l'éducation, aux services et à l'emploi.",
+      "Dans ce cadre, le projet MOOMOO vise la conception et la réalisation d'une application permettant la traduction du langage des signes en texte ou en audio, et réciproquement. Le titre officiel retenu est : « CONCEPTION ET RÉALISATION D'UNE APPLICATION DE TRADUCTION DU LANGAGE DES SIGNES EN TEXTE OU AUDIO ET VICE VERSA : CAS DE MOOMOO ». La nature exacte de l'entité MOOMOO (startup, produit interne, projet académique encadré), la langue des signes cible et la plateforme (mobile et/ou web) sont [À COMPLÉTER].",
+      "Le présent rapport, rédigé par OTILA Nicandre (GL3, 2025-2026), s'organise conformément au cahier des charges du stage pratique IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025) : une Partie I consacrée à la phase d'insertion, puis une Partie II technique structurée en sept dossiers (existant, cahier des charges, analyse, conception, réalisation, tests, guides). Une conclusion générale, des perspectives, une bibliographie, une webographie, un glossaire et des annexes (dont crédits d'images) complètent le document.",
+      "Épigraphe — « Alone we can do so little; together we can do so much. » — Helen Keller (citation attestée dans ses écrits et discours publics sur la coopération et l'accessibilité)."
+    ],
+    "CONCLUSION GÉNÉRALE": [
+      "Le stage a permis d'appliquer le cycle d'ingénierie logicielle exigé par l'IAI à un problème d'inclusion : la traduction bidirectionnelle entre langage des signes et texte/audio via MOOMOO (Institut Africain d'Informatique — Représentation du Cameroun, 2025). L'ancrage du besoin dans les données OMS (World Health Organization, 2024) et dans l'état de l'art SLR (Li et al., 2025) légitime le thème.",
+      "Les limites du présent livrable tiennent principalement aux informations non fournies (entreprise, période, langue des signes, stack, dataset, résultats de tests), volontairement laissées en [À COMPLÉTER] plutôt qu'inventées. La qualité finale dépendra de la complétion de ces éléments et de l'insertion des diagrammes/captures."
+    ]
+  },
+  "bullets": {
+    "DOSSIER 2 : CAHIER DES CHARGES|LES OBJECTIFS DU PROJET|Objectifs spécifiques": [
+      "Analyser l'existant et formuler la problématique de traduction signe ↔ texte/audio.",
+      "Spécifier les besoins fonctionnels et non fonctionnels de MOOMOO.",
+      "Modéliser la solution en UML (cas d'utilisation, interactions, classes).",
+      "Implémenter un prototype selon la stack retenue ([À VÉRIFIER]).",
+      "Tester les fonctionnalités essentielles et documenter l'installation/utilisation."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|EXPRESSIONS DES BESOINS DE L'UTILISATEUR|Besoins fonctionnels": [
+      "BF01 — Capturer une séquence vidéo de signes via la caméra de l'appareil.",
+      "BF02 — Traduire les signes reconnus en texte affiché.",
+      "BF03 — Produire une sortie audio (synthèse vocale) du texte traduit.",
+      "BF04 — Saisir ou dicter un message texte/audio à traduire vers des signes.",
+      "BF05 — Afficher une restitution visuelle des signes ([À COMPLÉTER : modalité]).",
+      "BF06 — Gérer un glossaire/minilexique de signes de référence ([À COMPLÉTER]).",
+      "BF07 — Authentifier l'utilisateur si des profils sont requis ([À COMPLÉTER]).",
+      "BF08 — Consulter l'historique de traductions ([À COMPLÉTER : exigence réelle ?])."
+    ],
+    "DOSSIER 2 : CAHIER DES CHARGES|EXPRESSIONS DES BESOINS DE L'UTILISATEUR|Besoins non fonctionnels": [
+      "BNF01 — Performance : latence de reconnaissance acceptable en conditions d'usage ([À COMPLÉTER : seuil ms]).",
+      "BNF02 — Disponibilité : fonctionnement [À COMPLÉTER : online/offline].",
+      "BNF03 — Ergonomie : interface accessible (contrastes, tailles de texte).",
+      "BNF04 — Sécurité/vie privée : consentement, minimisation des vidéos stockées.",
+      "BNF05 — Portabilité : support de la plateforme cible ([À COMPLÉTER]).",
+      "BNF06 — Maintenabilité : code versionné et documenté.",
+      "BNF07 — Conformité pédagogique : livrables et planning IAI (Institut Africain d'Informatique — Représentation du Cameroun, 2025)."
+    ],
+    "DOSSIER 3 : DOSSIER D'ANALYSE|MODÉLISATION DE LA SOLUTION|DIAGRAMME DE CAS D'UTILISATION|LISTE ET ROLES DES DIFFERENTS ACTEURS DU SYSTEME": [
+      "Utilisateur sourd / signant — produit des signes et consomme texte/audio.",
+      "Utilisateur non signant — produit texte/audio et consomme une restitution en signes.",
+      "Administrateur / gestionnaire de glossaire — [À COMPLÉTER].",
+      "Service de modèle IA (système) — inférence de reconnaissance / synthèse.",
+      "Maître de stage (hors système) — validation métier des exigences."
+    ],
+    "DOSSIER 6 : TEST DE FONCTIONNALITE|FONCTIONNALITES": [
+      "Traduction signes → texte sur un jeu de signes de référence.",
+      "Lecture audio du texte traduit.",
+      "Traduction texte → restitution visuelle de signes.",
+      "Gestion des erreurs (éclairage insuffisant, hors vocabulaire).",
+      "Parcours d'installation sur machine propre."
+    ]
+  },
+  "tables": {
+    "critique": [
+      [
+        "Couverture linguistique limitée (ASL/européennes)",
+        "Mauvaise adaptation locale",
+        "Dataset et glossaire ciblés ([À COMPLÉTER])"
+      ],
+      [
+        "Dépendance cloud / API payantes",
+        "Coût et latence réseau",
+        "Option embarquée / modèles légers (Li et al., 2025)"
+      ],
+      [
+        "Capteurs spécialisés (gants, Kinect)",
+        "Coût et accessibilité",
+        "Webcam / smartphone RGB (Google AI Edge / MediaPipe Hand Landmarker, consulté le 29/09/2026)"
+      ],
+      [
+        "Absence de restitution signes ← texte",
+        "Communication non bidirectionnelle",
+        "Module avatar/clips ([À COMPLÉTER])"
+      ]
+    ],
+    "materiel": [
+      [
+        "PC portable HP 240 G10 i3 (dev)",
+        "1",
+        "250 000",
+        "250 000"
+      ],
+      [
+        "PC portable Lenovo IdeaPad 3 (support/doc)",
+        "1",
+        "210 000",
+        "210 000"
+      ],
+      [
+        "Webcam externe USB ([À COMPLÉTER])",
+        "1",
+        "[À VÉRIFIER]",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Frais Internet 3 mois ([À VÉRIFIER tarif])",
+        "3",
+        "[À VÉRIFIER]",
+        "[À VÉRIFIER]"
+      ]
+    ],
+    "logiciel": [
+      [
+        "Python (runtime)",
+        "Langage open source",
+        "0"
+      ],
+      [
+        "MediaPipe Hand Landmarker",
+        "Extraction landmarks mains",
+        "0"
+      ],
+      [
+        "PostgreSQL ([À VÉRIFIER usage MOOMOO])",
+        "SGBD relationnel open source",
+        "0"
+      ],
+      [
+        "Suite bureautique / IDE ([À COMPLÉTER])",
+        "Rédaction et développement",
+        "[À VÉRIFIER]"
+      ]
+    ],
+    "rh": [
+      [
+        "Stagiaire développeur (OTILA N.)",
+        "1",
+        "12 semaines",
+        "Indemnité [À VÉRIFIER]",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Maître de stage (encadrement)",
+        "1",
+        "12 semaines",
+        "Coût interne [À VÉRIFIER]",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Annotateur dataset signes",
+        "1",
+        "[À COMPLÉTER]",
+        "Réf. marché junior ~150 000/mois",
+        "150 000 × n mois [À VÉRIFIER]"
+      ],
+      [
+        "Superviseur académique IAI",
+        "1",
+        "Durée stage",
+        "Non monétisé ici",
+        "0 (pédagogique)"
+      ]
+    ],
+    "total": [
+      [
+        "Ressources matérielles (lignes sourcées)",
+        "460 000 + [À VÉRIFIER]"
+      ],
+      [
+        "Ressources logicielles",
+        "0 + [À VÉRIFIER]"
+      ],
+      [
+        "Ressources humaines",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Total provisoire",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Imprévus (10 %)",
+        "[À VÉRIFIER]"
+      ],
+      [
+        "Total",
+        "[À VÉRIFIER] — ne pas inventer de total non sourcé"
+      ]
+    ]
+  },
+  "glossaire": [
+    [
+      "ASL",
+      "American Sign Language — langue des signes américaine."
+    ],
+    [
+      "Landmark",
+      "Point clé anatomique détecté sur la main/le corps pour la vision par ordinateur."
+    ],
+    [
+      "LSTM",
+      "Long Short-Term Memory — réseau de neurones récurrent pour séquences."
+    ],
+    [
+      "MediaPipe",
+      "Framework Google AI Edge de perception (ex. Hand Landmarker)."
+    ],
+    [
+      "MOOMOO",
+      "Application objet du stage — traduction langage des signes ↔ texte/audio."
+    ],
+    [
+      "SLR",
+      "Sign Language Recognition — reconnaissance automatique de la langue des signes."
+    ],
+    [
+      "UML",
+      "Unified Modeling Language — langage de modélisation logicielle (OMG)."
+    ],
+    [
+      "MERISE",
+      "Méthode d'analyse et de conception de systèmes d'information."
+    ],
+    [
+      "2TUP",
+      "Two Tracks Unified Process — processus unifié en deux voies."
+    ],
+    [
+      "FCFA",
+      "Franc de la Communauté Financière Africaine (XAF)."
+    ],
+    [
+      "IAI",
+      "Institut Africain d'Informatique."
+    ],
+    [
+      "Dataset",
+      "Jeu de données annotées servant à l'entraînement/évaluation du modèle."
+    ]
+  ],
+  "sources_inline": {
+    "who": "(World Health Organization, 2024)",
+    "who_url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+    "zoom": "(Zoom Informatique Cameroun, consulté le 29/09/2026)",
+    "merc": "(Mercuriale des prix 2026 — MINCOMMERCE / référentiel BOND, consulté le 29/09/2026)",
+    "econuma": "(ECONUMA, 2026)",
+    "sango": "(Sango Services, 2026)"
+  }
+}
